@@ -24,6 +24,8 @@ sql = Route(
         "DO you have formal shoes in size 9?",
         "Are there any Puma shoes on sale?",
         "What is the price of pum running shoes?",
+        "I want to buy a product",
+        "Which products are highly sold"
     ],
     score_threshold=0.3
 )
