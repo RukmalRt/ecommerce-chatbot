@@ -20,6 +20,10 @@ pertaining to the data you have. The schema is provided in the schema tags.
 <schema> 
 table: product 
 
+IMPORTANT:
+The terms product, products, shoe, shoes, item, items, and footwear are
+INTERCHANGEABLE and ALL refer to rows in the product table.
+
 fields: 
 product_link - string (hyperlink to product)	
 title - string (name of the product)	
