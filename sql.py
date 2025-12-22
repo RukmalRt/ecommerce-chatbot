@@ -52,8 +52,10 @@ For example:
 2. Campus Women Running Shoes: Rs. 1104 (35 percent off), Rating: 4.4 <link>
 3. Campus Women Running Shoes: Rs. 1104 (35 percent off), Rating: 4.4 <link>
 
-Here,
-product == shoe, bag, dress, toy, or whatever the item is
+IMPORTANT:
+The terms product, products, shoe, shoes, item, items, and footwear are
+INTERCHANGEABLE and ALL refer to rows in the product table.
+
 """
 
 def generate_sql_query(question):
