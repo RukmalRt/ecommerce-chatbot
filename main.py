@@ -38,3 +38,8 @@ if query:
         st.markdown(response)
 
     st.session_state.messages.append({"role": "assistant", "content": response})
+
+with st.sidebar:
+    if st.button("🆕 Start New Chat"):
+        st.session_state["messages"] = []
+        st.rerun()
