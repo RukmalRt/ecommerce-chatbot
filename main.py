@@ -4,6 +4,7 @@ from faq import ingest_faq_data, faq_chain, generate_answer
 from pathlib import Path
 from sql import sql_chain
 
+st.set_page_config(page_title='E commerce chatbot', layout='wide')
 st.title("E commerce chatbot")
 
 faqs_path = Path(__file__).parent / "resources/faq_data.csv"
