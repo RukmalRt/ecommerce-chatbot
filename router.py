@@ -30,7 +30,25 @@ sql = Route(
     score_threshold=0.3
 )
 
-routes = [faq, sql]
+smalltalk = Route(
+    name="smalltalk",
+    utterances=[
+        "How are you?"
+        "What is your name?"
+        "Are you a robot?"
+        "What are you?"
+        "What do you do?",
+        "Where are you from",
+        "What is the tallest mountain on planet?",
+        "How many countries are there in the world",
+        "What is the country with highest population?",
+        "What is the biggest economy in the world?",
+        "What is the highest demanding job?"
+    ],
+    score_threshold=0.2
+)
+
+routes = [faq, sql, smalltalk]
 router = SemanticRouter(
     encoder=encoder,
     routes=routes,
