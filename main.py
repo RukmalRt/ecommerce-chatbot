@@ -3,6 +3,7 @@ from router import router
 from faq import ingest_faq_data, faq_chain, generate_answer
 from pathlib import Path
 from sql import sql_chain
+from smalltalk import smalltalk_chain
 
 st.set_page_config(page_title='E commerce chatbot', layout='wide')
 st.title("E commerce chatbot")
@@ -16,6 +17,8 @@ def ask(query):
         return faq_chain(query)
     elif route == 'sql':
         return sql_chain(query)
+    elif route == 'smalltalk':
+        return smalltalk_chain(query)
     else:
         return f"Route {route} not implemented yet"
 
